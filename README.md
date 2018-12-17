@@ -3,18 +3,23 @@
 React NASA Images
 
 This is a simple React project to search images using the NASA Image and Video Library. I used the super handy create-react-app.
-#Scripts
 
-In the project directory, you can run:
-#npm install
+# Scripts
+
+# Install
+
+npm install axios,
+npm install @reach/router
 
 Neccesary to install all the project dependencies.
-#npm start
+
+# npm start
 
 Open http://localhost:3000 to view it in the browser.
 
 Your app is not ready to be deployed! should make some changes
-TODO
+
+# TODO
 
 Add pagination. Possibly infinte scroll. For the moment just the first page is shown.
 
