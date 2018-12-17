@@ -21,7 +21,6 @@ class Search extends Component {
   }
   handleChange = event => {
     let value = event.target.value;
-
     this.setState({
       query: value
     });

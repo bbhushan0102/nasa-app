@@ -12,7 +12,8 @@ class App extends Component {
   state = {
     weather: [],
     query: "",
-    loading: true
+    loading: true,
+    image: ""
   };
 
   render() {
@@ -55,7 +56,7 @@ class App extends Component {
   }
   componentDidUpdate(prevProps, prevState) {
     if (prevState.query !== this.state.query) {
-      this.fetchData(this.state.query);
+      this.fetchData(this.state.query, this.state.image);
     }
   }
 
@@ -74,5 +75,5 @@ class App extends Component {
 export default App;
 
 // .get(
-//   `https://images-api.nasa.gov/search?q=${city}&media_type=image,video`
+//   `https://images-api.nasa.gov/search?q=${city}&media_type=${image}`
 // )

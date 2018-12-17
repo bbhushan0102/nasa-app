@@ -21,8 +21,6 @@ Your app is not ready to be deployed! should make some changes
 
 # TODO
 
-Add pagination. Possibly infinte scroll. For the moment just the first page is shown.
-
 Be able to download images in original size (high resolution).
 
 Add other type of media assets, not just images, the API also offers images and audios. In this case also a # video and audio player has to be implemented.

@@ -4,7 +4,9 @@ import "../main.css";
 
 function WeatherForcast(data) {
   const astroData = data.data.collection.items;
+  console.log(astroData)
   return (
+   
     <div>
       <h2>Nasa Recent Images</h2>
       {astroData &&
