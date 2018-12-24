@@ -3,7 +3,7 @@ import "../main.css";
 
 class Filters extends Component {
   state = {
-    value: "images"
+    value: "image"
   };
   render() {
     console.log(this.state);
@@ -12,10 +12,9 @@ class Filters extends Component {
         <label>
           Filter <br />
           <select value={this.state.value} onChange={this.handleChange}>
-            <option value="images">images</option>
-            {/* <option value="videos">Videos</option> */}
-            <option value="audio">Audio</option>
-            {/* <option value="all">All</option> */}
+            <option value="image">images</option>
+            <option value="video">Videos</option>
+           
           </select>
         </label>
         <input type="submit" value="Submit" />

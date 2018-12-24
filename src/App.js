@@ -10,10 +10,10 @@ import Asset from "./components/Asset";
 
 class App extends Component {
   state = {
-    weather: [],
+    astroData: [],
     query: "",
     loading: true,
-    image: ""
+    image: "image"
   };
 
   render() {
@@ -27,8 +27,11 @@ class App extends Component {
         <br />
         <br />
         <div className="main">
-          {this.state.weather.data && (
-            <AstroData data={this.state.weather.data} />
+          {this.state.astroData.data && (
+            <AstroData
+              data={this.state.astroData.data}
+              search={this.state.image}
+            />
           )}
         </div>
         <div className="section">
@@ -64,7 +67,7 @@ class App extends Component {
     axios
       .get(`https://images-api.nasa.gov/search?q=${query}`)
       .then(data => {
-        this.setState({ weather: data, loading: false });
+        this.setState({ astroData: data, loading: false });
       })
       .catch(error => {
         console.log(error);
