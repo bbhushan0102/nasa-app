@@ -7,6 +7,7 @@ import Search from "./components/Search";
 import AstroData from "./components/AstroData";
 import Filters from "./components/Filters";
 import Asset from "./components/Asset";
+import Metadata from "./components/Metadata";
 
 class App extends Component {
   state = {
@@ -40,6 +41,8 @@ class App extends Component {
         <Router>
           <AstroData path="/search" />
           <Asset path="/asset/:nasa_id" />
+
+          <Metadata path="/metadata/:nasa_id" />
         </Router>
       </div>
     );

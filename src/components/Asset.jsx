@@ -10,9 +10,8 @@ class Asset extends Component {
 
     return (
       <main>
-        <div>
+        <div className="main">
           <img
-            className="main"
             src={image && image.items[0].href}
             width="100"
             height="100"

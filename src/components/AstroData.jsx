@@ -5,8 +5,6 @@ import "../main.css";
 function AstroData(props) {
   const astroData = props.data.collection.items;
   const search = props.search;
-  // if (props.search === "") search = "image";
-
   return (
     <div>
       <h2>Nasa Recent Images</h2>
@@ -16,9 +14,11 @@ function AstroData(props) {
           if (data.data[0].media_type === search)
             return (
               <div key={data.data[0].nasa_id}>
-                <h3>{data.data[0].title}</h3>
-                <div>{data.data[0].media_type} ...</div>
-                <div>{data.data[0].description}</div>
+                <h3>Title : {data.data[0].title}</h3>
+                <div>Media Type : {data.data[0].media_type} ...</div>
+                <Link to={`/metadata/${data.data[0].nasa_id}`}>
+                  <div>{data.data[0].description}</div>
+                </Link>
                 <div>
                   {/* {(data.data[0].media_type==='image')} */}
                   <Link to={`/asset/${data.data[0].nasa_id}`}>
@@ -39,7 +39,9 @@ function AstroData(props) {
               <div key={data.data[0].nasa_id}>
                 <h3>{data.data[0].title}</h3>
                 <div>{data.data[0].media_type} ...</div>
-                <div>{data.data[0].description}</div>
+                <Link to={`/metadata/${data.data[0].nasa_id}`}>
+                  <div>{data.data[0].description}</div>
+                </Link>
                 <div>
                   {/* {(data.data[0].media_type==='image')} */}
                   <Link to={`/asset/${data.data[0].nasa_id}`}>
