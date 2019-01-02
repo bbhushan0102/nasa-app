@@ -38,10 +38,11 @@ class App extends Component {
         <div className="section">
           <Filters getFilter={this.getFilter} />
         </div>
+
         <Router>
           <AstroData path="/search" />
-          <Asset path="/asset/:nasa_id" />
 
+          <Asset path="/asset/:nasa_id" />
           <Metadata path="/metadata/:nasa_id" />
         </Router>
       </div>

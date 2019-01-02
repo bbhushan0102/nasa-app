@@ -14,7 +14,7 @@ class Filters extends Component {
           <select value={this.state.value} onChange={this.handleChange}>
             <option value="image">images</option>
             <option value="video">Videos</option>
-           
+            <option value="all">All</option>
           </select>
         </label>
         <input type="submit" value="Submit" />

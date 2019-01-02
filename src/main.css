@@ -10,18 +10,18 @@
 }
 .header {
   border: rgba(255, 0, 0, 0, 1);
-  background: #1a6fa808;
+  background: #09144708;
   grid-area: header;
 }
 .nav {
   border: rgba(255, 0, 0, 0, 1);
-  background: rgba(36, 13, 136, 0.03);
+  background: rgba(33, 6, 155, 0.03);
   grid-area: nav;
 }
 
 .main {
   border: 2px solid rgba(190, 190, 196, 0.815);
-  background: #2b57071a;
+  background: #0315501a;
   grid-area: main;
 }
 .section {
